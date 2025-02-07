@@ -42,7 +42,7 @@
 		</developer>
 	</developers>
 	<properties>
-		<servlet.version>2.4</servlet.version>
+		<servlet.version>2.5</servlet.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -87,10 +87,8 @@
 						<phase>package</phase>
 						<configuration>
 							<tasks>
-								<delete
-									file="${project.build.directory}\${project.artifactId}-${project.version}.jar" />
-								<jar
-									destfile="${project.build.directory}\${project.artifactId}-${project.version}.jar" />
+								<delete file="${project.build.directory}\${project.artifactId}-${project.version}.jar"/>
+								<jar destfile="${project.build.directory}\${project.artifactId}-${project.version}.jar"/>
 							</tasks>
 						</configuration>
 						<goals>
